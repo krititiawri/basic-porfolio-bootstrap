@@ -1,0 +1,106 @@
+
+ body{
+  background-image: url("../images/weather.png");
+ } 
+ /*Postioning panel*/
+.panel-body{
+  margin-left: 30px;
+}
+.panel-title{
+  text-align: center;
+}
+li{
+list-style:none;
+float: left;
+margin-right:50px;
+} 
+.thumb img{
+  position: relative;
+  width: 200px;
+  margin-left: 70px;
+ 
+}
+.img-type{ 
+   position: absolute; 
+   top: 120px; 
+   left: 75px; 
+   width: 190px; 
+   padding: 5px;
+   background-color: #4aaaa5;
+   text-align: center;
+}
+
+div.thumb {
+    float: left;
+    
+}
+p{
+   color: #777777;
+}
+// Classes
+.pull-left {
+  float: left !important;
+}
+// Usage as mixins
+.element {
+  .pull-left();
+}
+/*Positioning of column */
+.col-md-8{
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: #cccccc;
+  background-color:#ffffff;
+  /*padding: 20px;*/
+}
+/*Sticky Footer*/
+#footer{
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: #cccccc;
+  background-color:#ffffff;
+  width: 100%;
+  margin-top: 20px;
+  height: 30px;
+  text-align: center;
+}
+.navbar-text{
+  text-align: center;
+}
+/* The animation code */
+@keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.navbar-header {
+    text-align: center;
+    /*width: 100%;*/
+    background-color:#4aaaa5;
+    animation-name: example1; /*Animation name*/
+    animation-duration: 40s; /*Animation Duration*/
+    position: relative;   
+}
+/* The animation code */
+@keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: yellow;}
+}
+#menu{
+   animation-name: example;
+    animation-duration: 10s;
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+h2 span.spacer {
+   padding:0 5px;
+}
+
+
